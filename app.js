@@ -27,12 +27,12 @@ app.post("/login", function (req, res) {
   /**
    * request
    * {
-   *       "dataSource": "Cluster0",
-   *       "database": "IST256",
-   *       "collection": "IST",
-   *       "filter": {"_id": "<user email>", "password": "<user password>"}
-   *   }
-   */
+         "dataSource": "Cluster0",
+         "database": "IST256",
+         "collection": "IST",
+         "filter": {"_id": "<user email>", "password": "<user password>"}
+      }
+   
   //if found response
   /**
     * {
