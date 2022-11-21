@@ -12,16 +12,17 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
   </head>
   <body>
     <div ng-app="myApp" ng-controller="formCtrl">
-      <form>
-        <input type="email" name="email" ng-model="Data.email" />
-        <input type="text" name="firstName" ng-model="Data.firstName" />
-        <input type="text" name="lastName" ng-model="Data.lastName" />
+      <form action="/register" method="POST" class="reg-form">
+        <input type="email" name="email" ng-model="Data.email" /> <br><br>
+        <input type="text" name="firstName" ng-model="Data.firstName" /> <br><br>
+        <input type="text" name="lastName" ng-model="Data.lastName" /> <br><br>
         <input type="text" name="password" ng-model="Data.password" />
-        <a href="login.html"><button ng-click="fetchvalue()">Submit</button></a>
+        <a href="login.html"><button ng-click="fetchvalue()" class="reg-button">Submit</button></a>
       </form>
     </div>
   </body>
