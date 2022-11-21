@@ -1,7 +1,13 @@
+body {
+    background-color: aqua;
+}
+
+/* registration form CSS */
 .reg-form {
+    margin-top: 15%;
     margin-right: auto;
     margin-left: auto;
-    display: inline-block;
+    display: table;
     text-align: left;
 }
 
@@ -13,6 +19,85 @@
     height: 50px;
     width: 150px;
     margin-right: auto;
-    margin-left: auto;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 10px;
     display: inline-block;
+  }
+
+  .reg-label {
+    display: table-cell;
+  }
+
+  .reg-input {
+    margin-left: 10px;
+    display: table-cell;
+  }
+
+  .reg-div {
+    display: table-row;
+  }
+  .form-box {
+    background-color: lightgrey;
+    width: 499px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 20px;
+    display: table;
+  }
+
+  .f-form {
+    margin:auto;
+    width: 25%;
+    padding: 10px;
+
+  }
+
+/* Login Form */
+  .log-button {
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: solid;
+    color: black;
+    height: 50px;
+    width: 150px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: 235px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .log-form {
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+    text-align: left;
+}
+
+.log-label {
+    display: table-cell;
+  }
+
+.log-input {
+    margin-left: 10px;
+    display: table-cell;
+  }
+
+  
+.log-div {
+    display: table-row;
+  }
+
+.create {
+    margin-left: 243px;
+  }
+
+.form-box-l {
+    background-color: lightgrey;
+    width: 499px;
+    height: 350px;
+    border: 5px solid black;
+    margin: 20px;
+    display: table;
   }

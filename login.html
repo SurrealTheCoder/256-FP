@@ -10,23 +10,34 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="main.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
   </head>
   <body>
     <div ng-app="myApp" ng-controller="formCtrl">
-      <form action="/login" method="POST">
-        <input type="email" name="email" ng-model="Data.email" />
-        <input type="text" name="password" ng-model="Data.password" />
-        <a href="profile.html"
-          ><button ng-click="fetchvalue()">Submit</button></a
-        >
+      <div class="f-form">
+      <div class="form-box-l">
+      <form method="POST" class="log-form">
+        <h3>Login</h3><br>
+      <div class="log-div">
+        <label for="email" class="log-label">Enter Your Email:</label>
+        <input type="email" name="email" ng-model="Data.email" class="log-input" />
+      </div> <br>
+      <div class="log-div">
+        <label for="password" class="log-label">Enter a Password:</label>
+        <input type="text" name="password" ng-model="Data.password" class="log-input" />
+      </div>
+      <br>
       </form>
-      <a href="register.html"><span>Need to create an Account?</span></a>
+      <a href="login.html"><button ng-click="fetchvalue()" class="log-button">Submit</button></a> <br>
+      <a href="register.html" class="create">Create an Account</a>
     </div>
+    </div>
+  </div>
   </body>
 </html>
+
 <!--Login must have error checking when it
 comes to the login section. If user enters
 information and clicks submit, check with

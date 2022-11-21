@@ -13,17 +13,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
     <div ng-app="myApp" ng-controller="formCtrl">
-      <form action="/register" method="POST" class="reg-form">
-        <input type="email" name="email" ng-model="Data.email" /> <br><br>
-        <input type="text" name="firstName" ng-model="Data.firstName" /> <br><br>
-        <input type="text" name="lastName" ng-model="Data.lastName" /> <br><br>
-        <input type="text" name="password" ng-model="Data.password" />
-        <a href="login.html"><button ng-click="fetchvalue()" class="reg-button">Submit</button></a>
+      <div class="f-form">
+      <div class="form-box">
+      <form method="POST" class="reg-form">
+        <h3>Registration</h3><br>
+      <div class="reg-div">
+        <label for="email" class="log-label">Enter Your Email:</label>
+        <input type="email" name="email" ng-model="Data.email" class="reg-input" />
+      </div> <br><br>
+      <div class="reg-div">
+        <label for="firstName" class="log-label">Enter Your First Name:</label>
+        <input type="text" name="firstName" ng-model="Data.firstName" class="reg-input"/>
+      </div> <br><br>
+      <div class="reg-div">
+        <label for="lastName" class="log-label">Enter your Last Name: </label>
+        <input type="text" name="lastName" ng-model="Data.lastName" class="reg-input"/>
+      </div> <br><br>
+      <div class="reg-div">
+        <label for="password" class="log-label">Enter a Password:</label>
+        <input type="text" name="password" ng-model="Data.password" class="reg-input" />
+      </div>
+      <br>
       </form>
+      <a href="login.html"><button ng-click="fetchvalue()" class="reg-button">Submit</button></a>
     </div>
+    </div>
+  </div>
   </body>
 </html>
